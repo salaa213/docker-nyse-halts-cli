@@ -54,3 +54,10 @@ The application will:
 -   Display the data in a readable table format.
     
 -   Refresh every 10 seconds to show updated information.
+
+### Debugging with Interactive Shell
+
+If you need to debug or test the environment inside the Docker container, you can run the container with an interactive shell:
+
+```bash
+docker run -it --rm nyse-halts:latest bash
