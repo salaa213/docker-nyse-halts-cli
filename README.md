@@ -11,8 +11,6 @@ This project provides a simple Dockerized Python application that fetches trade 
 
 ## Prerequisites
 - Docker installed on your system.
-- (Optional) Git for cloning the repository.
-
 ---
 
 
