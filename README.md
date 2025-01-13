@@ -18,6 +18,39 @@ This project provides a simple Dockerized Python application that fetches trade 
 ## Setup Instructions
 
 ### 1. Clone the Repository
-```bash
+
+Clone the project repository from GitHub:
+
+```
 git clone https://github.com/tsalameh512/docker-nyse-halts.git
 cd docker-nyse-halts
+```
+
+----------
+
+### 2. Build the Docker Image
+
+Use the provided `Dockerfile` to build the image locally:
+
+```
+docker build -t nyse-halts:latest .
+```
+
+----------
+
+### 3. Run the Application
+
+Run the Docker container:
+
+```
+docker run -it --rm nyse-halts:latest
+```
+
+The application will:
+
+-   Fetch the latest trade halt data from the NYSE API.
+    
+-   Display the data in a readable table format.
+    
+-   Refresh every 10 seconds to show updated information.
+****
