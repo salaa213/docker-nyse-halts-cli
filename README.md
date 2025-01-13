@@ -1,4 +1,4 @@
-# Docker-NYSE-Halts
+# Docker-NYSE-Halts - PROD Ready
 
 This project provides a simple Dockerized Python application that fetches trade halt data from the NYSE API and prints it as a table in the terminal. The application continuously fetches and displays the latest data every 10 seconds.
 
