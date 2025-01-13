@@ -7,8 +7,11 @@ WORKDIR /app
 # Copy the local app.py to the container
 COPY app.py /app/app.py
 
-# Install required Python packages with a specific version of pandas
-RUN pip install pandas==1.5.3
+# Upgrade pip to the latest version
+RUN pip install --upgrade pip
+
+# Install specific versions of numpy and pandas for compatibility
+RUN pip install numpy==1.21.6 pandas==1.3.5
 
 # Command to run the application
 CMD ["python", "app.py"]
