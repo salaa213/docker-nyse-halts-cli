@@ -1,8 +1,14 @@
-FROM python:3
-WORKDIR /usr/src/app
+# Base Python image
+FROM python:3.9-slim
 
-RUN pip install pandas, time
+# Set working directory in the container
+WORKDIR /app
 
-COPY . .
+# Copy the local app.py to the container
+COPY app.py /app/app.py
 
-CMD ["python", "./app.py"]
+# Install required Python packages with a specific version of pandas
+RUN pip install pandas==1.5.3
+
+# Command to run the application
+CMD ["python", "app.py"]
