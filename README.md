@@ -23,7 +23,7 @@ This project provides a simple Dockerized Python application that fetches trade 
 Clone the project repository from GitHub:
 
 ```
-git clone https://github.com/tsalameh512/docker--cli.git
+git clone https://github.com/tsalameh512/docker-nyse-halts-cli.git
 cd docker-nyse-halts-cli
 ```
 
